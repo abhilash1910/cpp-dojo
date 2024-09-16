@@ -1,0 +1,209 @@
+/* General Page Styling */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #282828;
+    color: #faf9f9;
+    padding: 20px 0; /* Increased padding for more space */
+    text-align: center;
+    border-bottom: 1px solid #e1e4e8;
+    position: relative; /* Allows for more control over alignment */
+}
+
+.logo {
+    font-size: 24px; /* Slightly larger font size for visibility */
+    font-weight: bold;
+    display: block; /* Ensures it takes up full width */
+    margin-bottom: 10px; /* Space between header and subheader */
+}
+
+.subheader {
+    font-size: 18px; /* Size for subheader */
+    font-weight: normal; /* Regular weight for subheader text */
+    color: #ccc; /* Lighter color for subheader contrast */
+    margin-bottom: 15px; /* Space between subheader and main content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #2f88ff;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #24292e;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.8;
+    color: #586069;
+}
+
+.article-meta {
+    font-size: 0.9em;
+    color: #586069;
+    margin-bottom: 15px;
+}
+
+/* Dark Theme for Code and Example Sections */
+.code-section, .example, .sample-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark background */
+    border-radius: 6px;
+    border-left: 5px solid #d6a111; /* Highlighted border */
+    border: 1px solid #333; /* Darker border */
+    color: #f8f8f2; /* Light text */
+}
+
+.code-section h2, .example h2, .sample-section h2 {
+    color: #f8f8f2; /* Light heading */
+}
+
+pre {
+    background-color: #2d2d2d; /* Slightly lighter dark background for pre */
+    color: #f8f8f2; /* Light text */
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #444; /* Darker border */
+    overflow-x: auto;
+    font-size: 13px;
+}
+
+.code-block {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    /* Additional styles can be added if necessary */
+}
+
+/* Syntax Highlighting for Dark Theme */
+pre .keyword {
+    color: #ff79c6; /* Bright magenta */
+    font-weight: bold;
+}
+
+pre .number {
+    color: #bd93f9; /* Purple */
+}
+
+pre .string {
+    color: #f1fa8c; /* Yellow */
+}
+
+pre .comment {
+    color: #6272a4; /* Grayish blue */
+    font-style: italic;
+}
+
+pre .function {
+    color: #fbf5f5; /* Green */
+}
+
+pre .operator {
+    color: #f8f8f2; /* Light text */
+}
+
+pre .class-name {
+    color: #8be9fd; /* Cyan */
+}
+
+/* Examples Section - Black Theme */
+.example {
+    background-color: #2d2d2d; /* Slightly lighter dark background */
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #d6a111; /* Highlighted border for emphasis */
+    color: #f8f8f2; /* Light text */
+}
+
+.example h3 {
+    color: #f4f6f4; /* Green */
+}
+
+.example pre {
+    background-color: #1e1e1e; /* Dark background for code snippets */
+    color: #f8f8f2; /* Light text */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.example strong {
+    color: #ed970d; /* Cyan */
+}
+
+.example p {
+    color: #cdd3de; /* Light gray text */
+}
+
+/* Footer */
+footer {
+    background-color: #282828;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #e1e4e8;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #2f88ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar, main {
+        width: 100%;
+        padding: 10px;
+    }
+}
